@@ -38,7 +38,10 @@ generate_qr.addEventListener('click',()=>{
     if(isEmpty() != 0){
     let url = `https://api.qrserver.com/v1/create-qr-code/?size=190x205&data=${user_input.value}`;
     qrcode.src=url;
-    user_input.value="";}
+    user_input.value="";
+    downloadBtn.setAttribute("href",`https://api.qrserver.com/v1/create-qr-code/?size=190x205&data=${user_input.value}`);
+    downloadBtn.setAttribute("download",`download.png`);
+    }
     else{
         alert('Text Field cannot be empty');
     }
