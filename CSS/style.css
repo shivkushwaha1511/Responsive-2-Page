@@ -101,11 +101,10 @@ img{
     top:-11rem;
     left: 0;
     width: 100%;
-    height: 21vh;
+    height: 23vh;
     padding: 3rem;
     background-color: #e98074;
     transition: .3s;
-    overflow:hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +118,7 @@ img{
     cursor: pointer;
 }
 .nav_item{
-    margin-bottom: .9rem;
+    margin-bottom: var(--mb-4);
 }
 .nav_link{
     position: relative;
